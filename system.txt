@@ -1,0 +1,15 @@
+[Unit]
+Description=Sense HAT animation loop
+After=multi-user.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/env python3 /home/pixel/Documents/pi-pixel/sense.py
+WorkingDirectory=/home/pixel/Documents/pi-pixel/sense.py
+Restart=always
+StandardOutput=inherit
+StandardError=inherit
+
+[Install]
+WantedBy=multi-user.target
