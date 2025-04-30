@@ -4,7 +4,6 @@ from sense_hat import SenseHat
 import time
 
 s = SenseHat()
-s.low_light = True
 
 # ------------------ COLOR DEFINITIONS ------------------
 BLACK = (0, 0, 0)
